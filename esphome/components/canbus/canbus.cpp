@@ -43,7 +43,7 @@ void Canbus::loop() {
   struct CanFrame can_message;
   // readmessage
   if (this->read_message(&can_message) == canbus::ERROR_OK) {
-    ESP_LOGD(TAG, "1234received can message can_id=%d size=%d", can_message.can_id, can_message.can_dlc);
+    ESP_LOGD(TAG, "1234 received can message can_id=%d size=%d", can_message.can_id, can_message.can_dlc);
 
     std::vector<uint8_t> data;
 
